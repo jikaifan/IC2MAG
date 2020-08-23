@@ -128,8 +128,9 @@ def process(FileIC):
         plt.colorbar(mappable=dis2,ax=ax2)                    
         plt.colorbar(mappable=dis4,ax=ax4)   
         
-    plt.show()
+    #plt.show()
     plt.savefig('figure/'+namesub[:-10]+'.jpg',dpi=150)
+    plt.show()
     print('The figure has been saved in ./figure folder.')
                     
 if __name__ == "__main__":
