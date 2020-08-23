@@ -26,10 +26,11 @@ This repo may be able to be used in the GPU environment, but enough GPU memory i
 ### Folder Structure
 
 * The folder ```./input```: continuum images for test
-* The folder ```./output```: estimated abs(Br) and Bp images
+* The folder ```./output```: estimated abs(Br) and Bp images from CNN
 * The folder ```./target```: Br, Bt, Bp from inversion (optional)
-* The folder ```./model```:   two trained models for estimating abs(Br) and Bp
-* The folder ```./resultsamples```:  some jpgs and mp4 samples for visualization
+* The folder ```./model```: two trained models for estimating abs(Br) and Bp
+* The folder ```./figure```: figure of test result
+* The folder ```./resultsamples```: some jpgs and mp4 samples for visualization
 
 ### Usage
 
