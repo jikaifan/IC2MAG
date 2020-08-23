@@ -72,12 +72,5 @@ def fitsimg(img_path):
         IC/=BK
         IC=IC[np.newaxis,np.newaxis,:,:].astype('float32')
         IC=np.ascontiguousarray(IC)
-        IC=torch.from_numpy(IC)
         return IC
 
-def load(model_file,device):
-    model_state_dict=torch.load(model_file).state_dict()
-    model=net.ResNet(1,256,10,1)
-    model.load_state_dict(model_state_dict)
-    model.to(device)
-    return model
