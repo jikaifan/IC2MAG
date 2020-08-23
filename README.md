@@ -1,6 +1,6 @@
 # Solar Magnetic Field Estimated from the Photospheric Continuum Image with Machine Learning Method 
 
-This repo is the official implementation for our paper: Solar Magnetic Field Estimated from the Photospheric Continuum Image with Machine Learning Method. <br>
+This repo is the official implementation for our paper: Solar Magnetic Field Estimated from the Photospheric Continuum Image with Machine Learning Method <br>
 
 ![image](https://github.com/jikaifan/IC2mag/blob/master/images/visualization.jpeg)
 
