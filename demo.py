@@ -4,6 +4,8 @@ Created on Tue Oct 12 08:43:35 2019
 
 @author: Kaifan JI
 """
+# import matplotlib
+# matplotlib.use('Agg') #show up graphs on backend
 from matplotlib import pyplot as plt
 import numpy as np
 import torch,os
@@ -58,7 +60,7 @@ def process(FileIC):
     FileBp='target/hmi.sharp_cea_720s.'+namesub[19:-19]+'_TAI.Bp.fits'
     
     plt.figure('IC2MAG')
-    print('\nA figure has popped up, please check it.')
+
     fz=10 #fontsize
     flag=os.path.exists(FileBr) and os.path.exists(FileBt) and os.path.exists(FileBp) 
     if flag:
@@ -128,22 +130,22 @@ def process(FileIC):
         plt.colorbar(mappable=dis2,ax=ax2)                    
         plt.colorbar(mappable=dis4,ax=ax4)   
         
-    #plt.show()
+
     plt.savefig('figure/'+namesub[:-10]+'.jpg',dpi=150)
     plt.show()
-    print('The figure has been saved in ./figure folder.')
+    print('\nThe figure of results has shown up, and been saved in ./figure folder.')
                     
 if __name__ == "__main__":
     #################input continuum filename
     #FileIC='input/hmi.sharp_cea_720s.3700.20140203_133600_TAI.continuum.fits'
     #FileIC='input/hmi.sharp_cea_720s.3700.20140131_024800_TAI.continuum.fits'
     #FileIC='input/hmi.sharp_cea_720s.2875.20130618_122400_TAI.continuum.fits'
-    # FileIC='input/hmi.sharp_cea_720s.2875.20130620_103600_TAI.continuum.fits'
+    FileIC='input/hmi.sharp_cea_720s.2875.20130620_103600_TAI.continuum.fits'
     
-    FileIC='./input/hmi.sharp_cea_720s.2875.20130622_084800_TAI.continuum.fits'   
+    #FileIC='./input/hmi.sharp_cea_720s.2875.20130622_084800_TAI.continuum.fits'   
     
     print('\nThe INPUT continuum image is \n'+ FileIC)
-    print('Start Processing......')
+    print('\nStart Processing......')
     process(FileIC)
     pass
 
