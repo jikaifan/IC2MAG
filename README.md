@@ -5,7 +5,7 @@ This repo is the official implementation for our paper: Solar Magnetic Field Est
 ![image](https://github.com/jikaifan/IC2mag/blob/master/icons/visualization.jpeg)
 
 
-The repo is still under construction, current version provides,
+The repo is still under construction, current version provides：
 
 * Trained models <br>
 * The full inference and visualization <br>
@@ -40,6 +40,6 @@ Use trained model to test, run
 python demo.py
 ```
 
-The test images and trained models can be found in the folder ```./input```, ```./model```
+
 
 
