@@ -9,7 +9,7 @@ The repo is still under construction, current version provides,
 
 * Trained models <br>
 * The full inference and visualization <br>
-* Samples of test image <br>
+* Samples of test  continuum image <br>
 * Samples of test results <br>
 
 ### Dependencies
@@ -21,16 +21,16 @@ This code is tested on a Ubuntu 16.04 machine with a GTX 2080Ti GPU, with the fo
 * astropy=4.0 <br>
 * matplotlib, numpy <br>
 
-This repo may be able to be used in the GPU environment, but enough GPU memory is needed
+This repo is able to be used in the GPU environment, but enough GPU memory is needed
 
 ### Folder Structure
 
-* The folder ```./input```: continuum images for test
-* The folder ```./output```: estimated abs(Br) and Bp images from CNN
+* The folder ```./input```: continuum images for model testing
+* The folder ```./output```: output estimated abs(Br) and Bp images from CNN
 * The folder ```./target```: Br, Bt, Bp from inversion (optional)
 * The folder ```./model```: two trained models for estimating abs(Br) and Bp
 * The folder ```./figure```: figure of test result
-* The folder ```./resultsamples```: some jpgs and mp4 samples for visualization
+* The folder ```./resultsamples```: some figures and mp4 samples for visualization
 
 ### Usage
 
