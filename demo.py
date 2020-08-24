@@ -48,7 +48,7 @@ def process(FileIC):
     
     pBr = modelBr(IC.to(device)).cpu().detach().numpy().squeeze()
     pBt = modelBt(IC.to(device)).cpu().detach().numpy().squeeze()
-    naimage=plt.imread('./images/na.png')[:,:,0]
+    naimage=plt.imread('./icons/na.png')[:,:,0]
     
     ################save predicted Br and Bt to Fits files
     f.fitswrite('./output/Br_from_'+namesub+'.fits',pBr)
