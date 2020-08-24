@@ -109,7 +109,6 @@ def process(FileIC):
     plt.colorbar(mappable=dis4,ax=ax4)    
       
     plt.savefig('figure/'+namesub[:-10]+'.jpg',dpi=150)  
-
     print('\nThe figure of results has been saved in ./figure folder and shown up. \n\n\033[1;35;43mPlease close the figure window to EXIT\033[0m') 
     plt.show()
                
