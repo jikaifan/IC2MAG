@@ -9,7 +9,7 @@ The repo is still under construction, current version provides,
 
 * Trained models <br>
 * The full inference and visualization <br>
-* Samples of test  continuum image <br>
+* Samples of test continuum image <br>
 * Samples of test results <br>
 
 ### Dependencies
@@ -26,11 +26,11 @@ This repo is able to be used in the GPU environment, but enough GPU memory is ne
 ### Folder Structure
 
 * The folder ```./input```: continuum images for model testing
-* The folder ```./output```: output estimated abs(Br) and Bp images from CNN
-* The folder ```./target```: Br, Bt, Bp from inversion (optional)
 * The folder ```./model```: two trained models for estimating abs(Br) and Bp
+* The folder ```./output```: output estimated abs(Br) and Bp images from our models
+* The folder ```./target```: Br, Bt, Bp from inversion (optional)
 * The folder ```./figure```: figure of test result
-* The folder ```./resultsamples```: some figures and mp4 samples for visualization
+* The folder ```./resultsamples```: some  figures and mp4 movies of test set results
 
 ### Usage
 
@@ -40,6 +40,6 @@ Use trained model to test, run
 python demo.py
 ```
 
-The data and trained model can be found in the folder ```./input```, ```./model```
+The test images and trained models can be found in the folder ```./input```, ```./model```
 
 
