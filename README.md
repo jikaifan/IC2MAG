@@ -40,6 +40,6 @@ Use trained model to test, run
 python demo.py
 ```
 
-The data and trained model can be found in the folder ```./input```, ```./model```. Please close the figure window to EXIT
+The data and trained model can be found in the folder ```./input```, ```./model```
 
 
