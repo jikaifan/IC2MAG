@@ -11,6 +11,8 @@ import numpy as np
 import torch,os
 import func as f
 from resnet import ResNet as NET 
+from PIL import Image
+ 
 import warnings
  
 warnings.filterwarnings('ignore')
@@ -38,7 +40,7 @@ maxMag=1000
 minMag=0
 
 def process(FileIC):
-
+#    plt.ion()
     namesub=os.path.basename(FileIC)
     
     IC =f.fitsimg(FileIC)
@@ -106,10 +108,11 @@ def process(FileIC):
     plt.colorbar(mappable=dis2,ax=ax2)                 
     plt.colorbar(mappable=dis4,ax=ax4)    
       
-    plt.savefig('figure/'+namesub[:-10]+'.jpg',dpi=150)
+    plt.savefig('figure/'+namesub[:-10]+'.jpg',dpi=150)  
+
+    print('\nThe figure of results has been saved in ./figure folder and shown up. \n\n\033[1;35;43mPlease close the figure window to EXIT\033[0m') 
     plt.show()
-    print('\nThe figure of results has shown up, and been saved in ./figure folder.')
-                    
+               
 if __name__ == "__main__":
     #################input continuum filename
     #FileIC='./input/hmi.sharp_cea_720s.3700.20140203_133600_TAI.continuum.fits'
