@@ -25,7 +25,7 @@ This repo is able to be used in the GPU environment, but enough GPU memory is ne
 
 ### Folder Structure
 
-* The folder ```./input```: continuum images for model testing
+* The folder ```./input```: SHARP CEA continuum images for model testing
 * The folder ```./model```: two trained models for estimating abs(Br) and Bp
 * The folder ```./output```: estimated abs(Br) and Bp images from our CNN models
 * The folder ```./figure```: figure of output result
